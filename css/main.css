@@ -1,4 +1,6 @@
-body {
-  background: red; }
-  body p {
-    background: rawr; }
+header {
+  background: #518DCA;
+}
+header img {
+  margin-left: 30px;
+}
