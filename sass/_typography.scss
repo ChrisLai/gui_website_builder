@@ -1,0 +1,8 @@
+@font-face { font-family: ProximaNova; src: url('ProximaNova-RegRoman.otf'); } 
+@font-face { font-family: ProximaNova; font-style: italic; src: url('ProximaNova-RegIt.otf'); } 
+@font-face { font-family: ProximaNova; font-weight: lighter; src: url('ProximaNova-Light.otf'); } 
+@font-face { font-family: ProximaNova; font-weight: lighter; font-style: italic; src: url('ProximaNova-LightIt.otf'); } 
+@font-face { font-family: ProximaNova; font-weight: bold; src: url('ProximaNova-Sbold.otf'); }
+html body{
+	font-family: ProximaNova, Arial, sans-serif;
+}

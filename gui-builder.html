@@ -4,8 +4,8 @@
 <meta charset="utf-8" />
 <title>Mini Weebly</title>
  
-<link rel="stylesheet" href="css/main.css" type="text/css" />
- 
+<link rel="stylesheet" href="css/gui-builder.css" type="text/css" />
+
 <!--[if IE]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lte IE 7]>
@@ -15,14 +15,92 @@
 	<link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
 </head>
  
-<body class="home">
+<body id="gui-builder">
 	
 	<header>
+
 		<img src="Assets/Sprites/Weebly-Logo.png"/>
+
 	</header>
-	
-	<aside>
-		
+
+	<aside class="gui-toolbox">
+		<section id="templates">
+			<h3>
+				TEMPALTES
+			</h3>
+			<ul>
+				<li>
+					<span>PAGE</span>
+					<button class="edit"></button>
+					<button class="delete"></button>
+				</li>
+				<li>
+					<span>PAGE</span>
+					<button class="edit"></button>
+					<button class="delete"></button>
+				</li>
+				<li id="add-page-textbox">
+					<input type="text" placeholder="ADD NEW PAGE">
+					<button class="add">
+				</li>
+
+			</ul>
+		</section>
+
+		<section id="elements">
+			<h3>ELEMENTS</h3>
+			<ul>
+				<li>
+					<div class="elements-image">
+						<img src="">
+					</div>
+					
+					<div class="elements-title"> 
+						TITLE
+					</div>
+				</li>
+				<li>
+					<div class="elements-image">
+						<img src="">
+					</div>
+					
+					<div class="elements-title"> 
+						TEXT
+					</div>
+				</li>
+				<li>
+					<div class="elements-image">
+						<img src="">
+					</div>
+					
+					<div class="elements-title"> 
+						IMAGE
+					</div>
+				</li>
+				<li>
+					<div class="elements-image">
+						<img src="">
+					</div>
+					
+					<div class="elements-title"> 
+						NAV
+					</div>
+				</li>
+			</ul>
+		</section>
+
+
+
+		<section id="settings">
+			<h3>
+				SETTINGS
+			</h3>
+			<div class="site-grid">
+				<span>SITE GRID</span> 
+				<input type="check" />
+			</div>
+		</section>
+
 	</aside>
 	
 	<main>

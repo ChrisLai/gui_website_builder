@@ -1,0 +1,44 @@
+//Background Colors
+$toolbox-background-color: #2C3E50;
+$title-background-color: #4f657b;
+
+//Text Color
+$title-color: #9cb3ca;
+
+//Other Color
+$border-color: #1a2733;
+
+.gui-toolbox{
+
+	width: 240px;
+	background: $toolbox-background-color;
+	height: 100%;
+
+	h3{
+		background: $title-background-color;
+		margin: 0;
+		height: 30px;
+		border-top: 2px solid $border-color;
+		border-bottom: 2px solid $border-color;
+		width: 100%;
+		color: $title-color;
+		line-height: 30px;
+		text-align: center;
+		font-size: 11px;
+
+	}
+}
+
+
+//Reset
+html{
+	height: 100%;
+	body{
+		height: 100%;
+	}
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
