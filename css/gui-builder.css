@@ -363,24 +363,24 @@ header {
 
 @font-face {
   font-family: ProximaNova;
-  src: url("ProximaNova-RegRoman.otf"); }
+  src: url("../Assets/Font/ProximaNova-Reg.otf"); }
 @font-face {
   font-family: ProximaNova;
   font-style: italic;
-  src: url("ProximaNova-RegIt.otf"); }
+  src: url("../Assets/Font/ProximaNova-RegIt.otf"); }
 @font-face {
   font-family: ProximaNova;
   font-weight: lighter;
-  src: url("ProximaNova-Light.otf"); }
+  src: url("../Assets/Font/ProximaNova-Light.otf"); }
 @font-face {
   font-family: ProximaNova;
   font-weight: lighter;
   font-style: italic;
-  src: url("ProximaNova-LightIt.otf"); }
+  src: url("../Assets/Font/ProximaNova-LightIt.otf"); }
 @font-face {
   font-family: ProximaNova;
   font-weight: bold;
-  src: url("ProximaNova-Sbold.otf"); }
+  src: url("../Assets/Font/ProximaNova-Sbold.otf"); }
 html body {
   font-family: ProximaNova, Arial, sans-serif; }
 
@@ -398,7 +398,114 @@ html body {
     color: #9cb3ca;
     line-height: 30px;
     text-align: center;
-    font-size: 11px; }
+    font-size: 15px; }
+  .gui-toolbox #templates .page {
+    margin-top: 25px; }
+    .gui-toolbox #templates .page li {
+      height: 30px;
+      width: 140px;
+      margin: 0 auto 10px auto;
+      display: block;
+      background: #4f657b;
+      padding: 0 10px 0 20px;
+      line-height: 30px;
+      font-weight: bold;
+      color: white;
+      font-size: 16px;
+      border-radius: 4px;
+      overflow: auto; }
+      .gui-toolbox #templates .page li.confirmDelete {
+        background: #d86a65; }
+      .gui-toolbox #templates .page li.current {
+        background: #518dca; }
+      .gui-toolbox #templates .page li.addPageForm {
+        border: 2px solid #4f657b;
+        background: none;
+        margin-bottom: 20px; }
+        .gui-toolbox #templates .page li.addPageForm input {
+          height: 27px;
+          width: 120px;
+          float: left;
+          display: inline;
+          border: 0;
+          background: none; }
+          .gui-toolbox #templates .page li.addPageForm input::-webkit-input-placeholder {
+            color: #4f657b; }
+          .gui-toolbox #templates .page li.addPageForm input:-moz-placeholder {
+            color: #4f657b; }
+          .gui-toolbox #templates .page li.addPageForm input::-moz-placeholder {
+            color: #4f657b; }
+          .gui-toolbox #templates .page li.addPageForm input:-ms-input-placeholder {
+            color: #4f657b; }
+          .gui-toolbox #templates .page li.addPageForm input:focus {
+            outline: 0; }
+    .gui-toolbox #templates .page .buttonWrapper {
+      float: right; }
+      .gui-toolbox #templates .page .buttonWrapper button {
+        height: 15px;
+        width: 15px;
+        border: 0;
+        background: url("../Assets/Sprites/Add-Delete-Edit-Icons.png"); }
+        .gui-toolbox #templates .page .buttonWrapper button.edit {
+          background-position: -34px -11px; }
+          .gui-toolbox #templates .page .buttonWrapper button.edit:hover {
+            background-position: -34px -30px; }
+        .gui-toolbox #templates .page .buttonWrapper button.delete {
+          background-position: -52px -11px; }
+          .gui-toolbox #templates .page .buttonWrapper button.delete:hover {
+            background-position: -52px -30px; }
+        .gui-toolbox #templates .page .buttonWrapper button.add {
+          background-position: -13px -12px; }
+          .gui-toolbox #templates .page .buttonWrapper button.add:hover {
+            background-position: -13px -31px; }
+  .gui-toolbox #elements {
+    overflow: auto; }
+    .gui-toolbox #elements li {
+      float: left;
+      height: 120px;
+      width: 118px;
+      border: 1px solid #21313f;
+      cursor: move; }
+      .gui-toolbox #elements li:hover {
+        background: #394e62; }
+    .gui-toolbox #elements .elements-title {
+      text-align: center;
+      color: #5e768e;
+      font-size: 16px;
+      font-weight: bold; }
+    .gui-toolbox #elements .elements-image {
+      margin: 20px auto 7px auto;
+      height: 55px;
+      width: 55px;
+      background: url("../Assets/Sprites/Element-Icons.png"); }
+      .gui-toolbox #elements .elements-image#title-icon {
+        background-position: -7px -7px; }
+      .gui-toolbox #elements .elements-image#text-icon {
+        background-position: -62px -7px; }
+      .gui-toolbox #elements .elements-image#image-icon {
+        background-position: -116px -7px; }
+      .gui-toolbox #elements .elements-image#nav-icon {
+        background-position: -170px -7px; }
+  .gui-toolbox #settings .site-grid-container {
+    overflow: auto;
+    margin-top: 10px;
+    padding: 0 30px; }
+    .gui-toolbox #settings .site-grid-container span {
+      line-height: 29px;
+      color: #5e768e;
+      font-size: 16px;
+      font-weight: bold; }
+    .gui-toolbox #settings .site-grid-container input {
+      display: none; }
+    .gui-toolbox #settings .site-grid-container label {
+      width: 60px;
+      height: 29px;
+      background: url("../Assets/Sprites/Toggle-Switch.png");
+      float: right;
+      background-position: 0px -3px;
+      cursor: pointer; }
+    .gui-toolbox #settings .site-grid-container input[type="checkbox"]:checked + label {
+      background-position: 0px -53px; }
 
 html {
   height: 100%; }

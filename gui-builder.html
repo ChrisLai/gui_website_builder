@@ -28,20 +28,26 @@
 			<h3>
 				TEMPALTES
 			</h3>
-			<ul>
-				<li>
+			<ul class="page">
+				<li class="current">
 					<span>PAGE</span>
-					<button class="edit"></button>
-					<button class="delete"></button>
+					<div class="buttonWrapper">
+						<button class="edit"></button>
+						<button class="delete"></button>
+					</div>
 				</li>
-				<li>
+				<li class="confirmDelete">
 					<span>PAGE</span>
-					<button class="edit"></button>
-					<button class="delete"></button>
+					<div class="buttonWrapper">
+						<button class="edit"></button>
+						<button class="delete"></button>
+					</div>
 				</li>
-				<li id="add-page-textbox">
+				<li class="addPageForm">
 					<input type="text" placeholder="ADD NEW PAGE">
-					<button class="add">
+					<div class="buttonWrapper">
+						<button class="add"></button>
+					</div>
 				</li>
 
 			</ul>
@@ -51,8 +57,8 @@
 			<h3>ELEMENTS</h3>
 			<ul>
 				<li>
-					<div class="elements-image">
-						<img src="">
+					<div id="title-icon" class="elements-image">
+						
 					</div>
 					
 					<div class="elements-title"> 
@@ -60,8 +66,8 @@
 					</div>
 				</li>
 				<li>
-					<div class="elements-image">
-						<img src="">
+					<div id="text-icon" class="elements-image">
+						
 					</div>
 					
 					<div class="elements-title"> 
@@ -69,8 +75,8 @@
 					</div>
 				</li>
 				<li>
-					<div class="elements-image">
-						<img src="">
+					<div id="image-icon" class="elements-image">
+						
 					</div>
 					
 					<div class="elements-title"> 
@@ -78,8 +84,8 @@
 					</div>
 				</li>
 				<li>
-					<div class="elements-image">
-						<img src="">
+					<div id="nav-icon" class="elements-image">
+						
 					</div>
 					
 					<div class="elements-title"> 
@@ -95,9 +101,10 @@
 			<h3>
 				SETTINGS
 			</h3>
-			<div class="site-grid">
+			<div class="site-grid-container">
 				<span>SITE GRID</span> 
-				<input type="check" />
+				<input id="site-grid" type="checkbox" />
+				<label for="site-grid"> </label>
 			</div>
 		</section>
 

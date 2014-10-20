@@ -24,9 +24,185 @@ $border-color: #1a2733;
 		color: $title-color;
 		line-height: 30px;
 		text-align: center;
-		font-size: 11px;
+		font-size: 15px;
 
 	}
+	#templates{
+
+		.page{
+			margin-top: 25px;
+			li{
+				height: 30px;
+				width: 140px;
+				margin: 0 auto 10px auto;
+				display: block;
+				background: #4f657b;
+				padding: 0 10px 0 20px;
+				line-height: 30px;
+				font-weight: bold;
+				color : white;
+				font-size: 16px;
+				border-radius: 4px;
+				//box-shadow: 0px 1px 1px #186ea2;
+				overflow: auto;		//Maintain float
+
+				&.confirmDelete{
+					background: #d86a65;
+				}
+
+				&.current{
+					
+					background: #518dca;
+
+				}
+
+				&.addPageForm{
+					border: 2px solid #4f657b;
+					background:none;
+					margin-bottom: 20px;
+
+					input{
+						height: 27px;
+						width: 120px;
+						float:left;
+						display:inline;
+						border:0;
+						background: none;
+						
+						@include placeholder {
+						    color: #4f657b;
+						}
+
+						&:focus{
+							outline: 0;
+						}
+
+					}
+				}
+			}
+			.buttonWrapper{
+				float:right;
+
+				button{
+					height: 15px;
+					width: 15px;
+					border: 0;
+					background:url("../Assets/Sprites/Add-Delete-Edit-Icons.png");
+
+					&.edit{
+						background-position:-34px -11px;
+						&:hover{
+							background-position:-34px -30px;
+						}
+					}
+					
+					&.delete{
+						background-position:-52px -11px;
+						&:hover{
+							background-position:-52px -30px;
+						}
+					}
+
+					&.add{
+						background-position:-13px -12px;
+
+						 &:hover{
+							background-position:-13px -31px;
+						}
+					}
+
+
+				}
+
+
+			}
+		}
+	}
+	#elements{
+		overflow: auto;
+
+		li{
+			float: left;
+			height: 120px;
+			width: 118px;
+			border:1px solid #21313f;
+			cursor: move;
+
+			&:hover{
+				background: #394e62;
+			}
+		}
+
+		.elements-title{
+			text-align: center;
+			color: #5e768e;
+			font-size: 16px;
+			font-weight: bold;
+
+		}
+
+		.elements-image{
+			margin: 20px auto 7px auto;
+			height: 55px;
+			width: 55px;
+			background:url("../Assets/Sprites/Element-Icons.png");
+
+			&#title-icon{
+				background-position: -7px -7px;
+			}
+
+			&#text-icon{
+				background-position: -62px -7px;
+			}
+
+			&#image-icon{
+				background-position: -116px -7px;
+			}
+
+			&#nav-icon{
+				background-position: -170px -7px;
+			}
+			
+		}
+
+
+
+
+
+	}
+
+	#settings{
+
+		.site-grid-container{
+			overflow: auto;
+			margin-top: 10px;
+			padding: 0 30px;
+			span{
+				line-height: 29px;
+				color: #5e768e;
+				font-size: 16px;
+				font-weight: bold;
+			}
+			input{
+				display: none;
+			}
+
+			label{
+				width: 60px;
+				height: 29px;
+				background: url("../Assets/Sprites/Toggle-Switch.png");
+				float: right;
+				background-position: 0px -3px;
+				cursor:pointer;
+				//@include transition(all, 0.2s, ease-in-out);
+			}
+			input[type="checkbox"]:checked + label{
+				//@include transition(all, 0.2s, ease-in-out);
+			 	background-position: 0px -53px;	
+			}
+		}
+	}
+
 }
 
 
@@ -42,3 +218,4 @@ ul{
 	padding: 0;
 	list-style: none;
 }
+
