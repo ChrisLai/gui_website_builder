@@ -384,11 +384,14 @@ header {
 html body {
   font-family: ProximaNova, Arial, sans-serif; }
 
-.gui-toolbox {
+#gui-builder .gui-toolbox {
+  position: absolute;
   width: 240px;
   background: #2c3e50;
-  height: 100%; }
-  .gui-toolbox h3 {
+  bottom: 0;
+  top: 44px;
+  left: 0; }
+  #gui-builder .gui-toolbox h3 {
     background: #4f657b;
     margin: 0;
     height: 30px;
@@ -399,9 +402,9 @@ html body {
     line-height: 30px;
     text-align: center;
     font-size: 15px; }
-  .gui-toolbox #templates .page {
+  #gui-builder .gui-toolbox #templates .page {
     margin-top: 25px; }
-    .gui-toolbox #templates .page li {
+    #gui-builder .gui-toolbox #templates .page li {
       height: 30px;
       width: 140px;
       margin: 0 auto 10px auto;
@@ -411,101 +414,157 @@ html body {
       line-height: 30px;
       font-weight: bold;
       color: white;
-      font-size: 16px;
+      font-size: 14px;
       border-radius: 4px;
       overflow: auto; }
-      .gui-toolbox #templates .page li.confirmDelete {
+      #gui-builder .gui-toolbox #templates .page li.confirmDelete {
         background: #d86a65; }
-      .gui-toolbox #templates .page li.current {
+        #gui-builder .gui-toolbox #templates .page li.confirmDelete button.edit {
+          display: none; }
+      #gui-builder .gui-toolbox #templates .page li.current {
         background: #518dca; }
-      .gui-toolbox #templates .page li.addPageForm {
+      #gui-builder .gui-toolbox #templates .page li.addPageForm {
         border: 2px solid #4f657b;
         background: none;
         margin-bottom: 20px; }
-        .gui-toolbox #templates .page li.addPageForm input {
+        #gui-builder .gui-toolbox #templates .page li.addPageForm input {
           height: 27px;
           width: 120px;
           float: left;
           display: inline;
           border: 0;
           background: none; }
-          .gui-toolbox #templates .page li.addPageForm input::-webkit-input-placeholder {
+          #gui-builder .gui-toolbox #templates .page li.addPageForm input::-webkit-input-placeholder {
             color: #4f657b; }
-          .gui-toolbox #templates .page li.addPageForm input:-moz-placeholder {
+          #gui-builder .gui-toolbox #templates .page li.addPageForm input:-moz-placeholder {
             color: #4f657b; }
-          .gui-toolbox #templates .page li.addPageForm input::-moz-placeholder {
+          #gui-builder .gui-toolbox #templates .page li.addPageForm input::-moz-placeholder {
             color: #4f657b; }
-          .gui-toolbox #templates .page li.addPageForm input:-ms-input-placeholder {
+          #gui-builder .gui-toolbox #templates .page li.addPageForm input:-ms-input-placeholder {
             color: #4f657b; }
-          .gui-toolbox #templates .page li.addPageForm input:focus {
+          #gui-builder .gui-toolbox #templates .page li.addPageForm input:focus {
             outline: 0; }
-    .gui-toolbox #templates .page .buttonWrapper {
-      float: right; }
-      .gui-toolbox #templates .page .buttonWrapper button {
+      #gui-builder .gui-toolbox #templates .page li:hover .buttonWrapper {
+        display: block; }
+    #gui-builder .gui-toolbox #templates .page .buttonWrapper {
+      float: right;
+      display: none; }
+      #gui-builder .gui-toolbox #templates .page .buttonWrapper button {
         height: 15px;
         width: 15px;
         border: 0;
         background: url("../Assets/Sprites/Add-Delete-Edit-Icons.png"); }
-        .gui-toolbox #templates .page .buttonWrapper button.edit {
+        #gui-builder .gui-toolbox #templates .page .buttonWrapper button.edit {
           background-position: -34px -11px; }
-          .gui-toolbox #templates .page .buttonWrapper button.edit:hover {
+          #gui-builder .gui-toolbox #templates .page .buttonWrapper button.edit:hover {
             background-position: -34px -30px; }
-        .gui-toolbox #templates .page .buttonWrapper button.delete {
+        #gui-builder .gui-toolbox #templates .page .buttonWrapper button.delete {
           background-position: -52px -11px; }
-          .gui-toolbox #templates .page .buttonWrapper button.delete:hover {
+          #gui-builder .gui-toolbox #templates .page .buttonWrapper button.delete:hover {
             background-position: -52px -30px; }
-        .gui-toolbox #templates .page .buttonWrapper button.add {
+        #gui-builder .gui-toolbox #templates .page .buttonWrapper button.add {
           background-position: -13px -12px; }
-          .gui-toolbox #templates .page .buttonWrapper button.add:hover {
+          #gui-builder .gui-toolbox #templates .page .buttonWrapper button.add:hover {
             background-position: -13px -31px; }
-  .gui-toolbox #elements {
+  #gui-builder .gui-toolbox #elements {
     overflow: auto; }
-    .gui-toolbox #elements li {
+    #gui-builder .gui-toolbox #elements li {
       float: left;
       height: 120px;
       width: 118px;
       border: 1px solid #21313f;
       cursor: move; }
-      .gui-toolbox #elements li:hover {
+      #gui-builder .gui-toolbox #elements li:hover {
         background: #394e62; }
-    .gui-toolbox #elements .elements-title {
+    #gui-builder .gui-toolbox #elements .elements-title {
       text-align: center;
       color: #5e768e;
       font-size: 16px;
       font-weight: bold; }
-    .gui-toolbox #elements .elements-image {
+    #gui-builder .gui-toolbox #elements .elements-image {
       margin: 20px auto 7px auto;
       height: 55px;
       width: 55px;
       background: url("../Assets/Sprites/Element-Icons.png"); }
-      .gui-toolbox #elements .elements-image#title-icon {
+      #gui-builder .gui-toolbox #elements .elements-image#title-icon {
         background-position: -7px -7px; }
-      .gui-toolbox #elements .elements-image#text-icon {
+      #gui-builder .gui-toolbox #elements .elements-image#text-icon {
         background-position: -62px -7px; }
-      .gui-toolbox #elements .elements-image#image-icon {
+      #gui-builder .gui-toolbox #elements .elements-image#image-icon {
         background-position: -116px -7px; }
-      .gui-toolbox #elements .elements-image#nav-icon {
+      #gui-builder .gui-toolbox #elements .elements-image#nav-icon {
         background-position: -170px -7px; }
-  .gui-toolbox #settings .site-grid-container {
+  #gui-builder .gui-toolbox #settings .site-grid-container {
     overflow: auto;
-    margin-top: 10px;
-    padding: 0 30px; }
-    .gui-toolbox #settings .site-grid-container span {
+    padding: 10px 30px;
+    border-bottom: 2px solid #1a2733; }
+    #gui-builder .gui-toolbox #settings .site-grid-container span {
       line-height: 29px;
       color: #5e768e;
       font-size: 16px;
       font-weight: bold; }
-    .gui-toolbox #settings .site-grid-container input {
+    #gui-builder .gui-toolbox #settings .site-grid-container input {
       display: none; }
-    .gui-toolbox #settings .site-grid-container label {
+    #gui-builder .gui-toolbox #settings .site-grid-container label {
       width: 60px;
       height: 29px;
       background: url("../Assets/Sprites/Toggle-Switch.png");
       float: right;
       background-position: 0px -3px;
       cursor: pointer; }
-    .gui-toolbox #settings .site-grid-container input[type="checkbox"]:checked + label {
+    #gui-builder .gui-toolbox #settings .site-grid-container input[type="checkbox"]:checked + label {
       background-position: 0px -53px; }
+#gui-builder main {
+  position: absolute;
+  top: 44px;
+  left: 240px;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  padding: 42px 72px;
+  overflow: scroll;
+  overflow-x: hidden; }
+  #gui-builder main .page-nav {
+    margin-bottom: 50px; }
+    #gui-builder main .page-nav li {
+      height: 40px;
+      width: 120px;
+      border: 2px solid #8498ac;
+      color: #8498ac;
+      display: inline-block;
+      vertical-align: top;
+      border-radius: 4px;
+      margin-right: 15px;
+      line-height: 40px;
+      text-align: center;
+      cursor: pointer; }
+      #gui-builder main .page-nav li.current {
+        background: #97aabc;
+        color: white; }
+  #gui-builder main .img-object {
+    height: 280px;
+    width: 100%;
+    border: 2px solid #c0ccd8;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 60px; }
+    #gui-builder main .img-object .img-placeholder img {
+      display: block;
+      margin: 50px auto 0 auto; }
+    #gui-builder main .img-object .img-placeholder p {
+      text-align: center;
+      font-weight: bold;
+      color: #c0ccd8;
+      margin: 0; }
+  #gui-builder main .title-object {
+    margin-bottom: 44px; }
+    #gui-builder main .title-object h2 {
+      color: #4f657b; }
+  #gui-builder main .text-object {
+    margin-bottom: 15px; }
+    #gui-builder main .text-object p {
+      color: #4f657b;
+      line-height: 35px; }
 
 html {
   height: 100%; }
@@ -516,3 +575,46 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+.Medium {
+  position: relative;
+  min-height: 10px; }
+
+.Medium-clear {
+  background: transparent !important;
+  background-color: transparent !important;
+  border-color: transparent !important; }
+
+.Medium,
+.Medium p:first-child {
+  margin-top: 0; }
+
+.Medium p:last-child {
+  margin-bottom: 0; }
+
+.Medium p:empty {
+  display: block;
+  height: 1em; }
+
+.Medium-paste-hook {
+  position: absolute;
+  opacity: 0; }
+
+.Medium-placeholder {
+  position: absolute; }
+
+.Medium-placeholder div {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  position: absolute; }
+
+.Medium-placeholder-rich div {
+  font-style: italic; }
+
+.Medium-inline,
+.Medium-placeholder-inline div,
+.Medium-inlineRich,
+.Medium-placeholder-inlineRich div {
+  overflow: hidden;
+  white-space: nowrap; }
