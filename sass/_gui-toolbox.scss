@@ -64,6 +64,15 @@ $page-nav-color: #97aabc;
 						
 						background: #518dca;
 
+						&.confirmDelete{
+						background: #d86a65;
+
+						& button.edit{
+							display: none;
+						}
+						
+					}
+
 					}
 
 					&.addPageForm{
@@ -88,6 +97,10 @@ $page-nav-color: #97aabc;
 							}
 
 						}
+
+						& .buttonWrapper{
+							display: block;
+						}
 					}
 
 					&:hover .buttonWrapper{
@@ -104,6 +117,9 @@ $page-nav-color: #97aabc;
 						border: 0;
 						background:url("../Assets/Sprites/Add-Delete-Edit-Icons.png");
 
+						&:focus{
+							outline: 0;
+						}
 						&.edit{
 							background-position:-34px -11px;
 							&:hover{
@@ -247,6 +263,7 @@ $page-nav-color: #97aabc;
 				&.current{
 					background: #97aabc;
 					color: white;
+
 				} 
 			}
 		}

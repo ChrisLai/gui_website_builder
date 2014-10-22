@@ -423,6 +423,10 @@ html body {
           display: none; }
       #gui-builder .gui-toolbox #templates .page li.current {
         background: #518dca; }
+        #gui-builder .gui-toolbox #templates .page li.current.confirmDelete {
+          background: #d86a65; }
+          #gui-builder .gui-toolbox #templates .page li.current.confirmDelete button.edit {
+            display: none; }
       #gui-builder .gui-toolbox #templates .page li.addPageForm {
         border: 2px solid #4f657b;
         background: none;
@@ -444,6 +448,8 @@ html body {
             color: #4f657b; }
           #gui-builder .gui-toolbox #templates .page li.addPageForm input:focus {
             outline: 0; }
+        #gui-builder .gui-toolbox #templates .page li.addPageForm .buttonWrapper {
+          display: block; }
       #gui-builder .gui-toolbox #templates .page li:hover .buttonWrapper {
         display: block; }
     #gui-builder .gui-toolbox #templates .page .buttonWrapper {
@@ -454,6 +460,8 @@ html body {
         width: 15px;
         border: 0;
         background: url("../Assets/Sprites/Add-Delete-Edit-Icons.png"); }
+        #gui-builder .gui-toolbox #templates .page .buttonWrapper button:focus {
+          outline: 0; }
         #gui-builder .gui-toolbox #templates .page .buttonWrapper button.edit {
           background-position: -34px -11px; }
           #gui-builder .gui-toolbox #templates .page .buttonWrapper button.edit:hover {
